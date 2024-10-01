@@ -1,0 +1,24 @@
+<section class="m-5">    
+    <h1>Add a new Serie</h1>
+    <%= form_with model: @serie, method: :serie do |form| %>
+        <div class="col-4">
+            <div class="m-3">
+                <%= form.label :name, "Name", class: "form-label" %>
+                <%= form.text_field :name, class: "form-control" %>
+            </div>
+            <div class="m-3">
+                <%= form.label :synopsis, "Synopsis", class: "form-label"
+                %>
+                <%= form.text_field :synopsis, class: "form-control" %>
+            </div>
+            <div class="m-3">
+                <%= form.label :director, "Director", class: "form-label"
+                %>
+                <%= form.text_field :director, class: "form-control" %>
+            </div>
+            <div class="m-3">
+                <%= form.submit "Submit", class: "btn btn-dark" %>
+            </div>
+        </div>
+    <% end %>
+</section>
